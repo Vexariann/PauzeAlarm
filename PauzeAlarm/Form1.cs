@@ -60,20 +60,20 @@ namespace PauzeAlarm
             myTimer.Interval = 60000;
             myTimer.Start();
 
-            System.Timers.Timer myTimer2 = new();
-            myTimer2.Elapsed += new ElapsedEventHandler(countdown);
-            myTimer2.Interval = 1000;
-            myTimer2.Start();
-            CountdownText.Text = time.ToString();
+            //System.Timers.Timer myTimer2 = new();
+            //myTimer2.Elapsed += new ElapsedEventHandler(countdown);
+            //myTimer2.Interval = 1000;
+            //myTimer2.Start();
+            //CountdownText.Text = time.ToString();
         }
 
-        private void countdown(object sender, EventArgs e)
-        {
-            time--;
-            if (time == 0)
-                time = 60;
-            CountdownText.Text = time.ToString();
-        }
+        //private void countdown(object sender, EventArgs e)
+        //{
+        //    time--;
+        //    if (time == 0)
+        //        time = 60;
+        //    CountdownText.Text = time.ToString();
+        //}
 
         public void TimedEvent(object source, ElapsedEventArgs e)
         {
